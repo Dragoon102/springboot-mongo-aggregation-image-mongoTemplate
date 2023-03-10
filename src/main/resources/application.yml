@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@cluster0.ftheyrm.mongodb.net/?retryWrites=true&w=majority
+      database: demo
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 10MB
+      enabled: true
